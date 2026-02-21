@@ -137,13 +137,14 @@ class SettingsWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Just See!"))
+        MainWindow.setWindowTitle(_translate("MainWindow", config.program_name + " v" + config.version))
+        MainWindow.setWindowIcon(QtGui.QIcon(config.icon))
         self.ForceStopButton.setText(_translate("MainWindow", "Остановить принудительно"))
         self.label.setText(
             _translate("MainWindow", "Путь к файлу, который будет использоваться в качестве исходного фона:"))
         self.StartButton.setText(_translate("MainWindow", "Запустить"))
         self.FilePath.setText(_translate("MainWindow", config.default_original_img))
-        self.Title.setText(_translate("MainWindow", "Just See!"))
+        self.Title.setText(_translate("MainWindow", config.program_name))
         self.InputText.setPlainText(_translate("MainWindow", "Entertainment - Развлечение\n"
                                                              "Postgraduate - Аспирант"))
         self.label_2.setText(_translate("MainWindow",

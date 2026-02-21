@@ -6,7 +6,6 @@ import json
 import random
 import os
 import ctypes
-
 import config
 
 user32 = ctypes.windll.user32
@@ -116,15 +115,25 @@ class Generator:
 
 
 if __name__ == "__main__":
-    text = """Institute of Artificial Intelligence - Институт Искусственного Интеллекта
-Purposefulness - Целеустремлённость
-to master - овладеть, освоить
-to stay focused on - сконцентрироваться на чем-то
-advantages, benefits - преимущества
-widespread - широко распространенный
-purpose, goal - цель
-in high spirits - в приподнятом настроении"""
-    g = Generator(text, "img/original (phone).png", "Set 3", write_json=False, for_phone=True)
+    text = """Introduce - Внедрять
+revise - пересматривать 
+diverse - разнообразный
+elections - выборы
+Power - Власть 
+to reject a law - отклонять закон 
+term - срок
+Emergency - появление
+Establish - создавать, учреждать 
+To rule - править 
+appoint - назначать 
+Invade - вторгаться 
+Conquer - завоёвывать 
+Fight - Битва
+achieve - достигать
+freedom - свобода 
+independence - независимость 
+several - несколько"""
+    g = Generator(text, "img/original (phone).png", "Set 4", write_json=False, for_phone=True)
     # g = Generator(text, "img/original.jpg", "Set 2", write_json=False)
     g.generate_wallpapers()
     # g.generate_random_queue(2, 0)

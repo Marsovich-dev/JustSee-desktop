@@ -6,4 +6,4 @@ icon = "img/icon.ico"
 img_folder_name = "Set Images"
 default_original_img = "img\original.jpg"
 font = "fonts\ProggyVectorRegular.ttf"
-
+# font = "fonts\BwSurcoBold.ttf"
